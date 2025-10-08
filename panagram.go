@@ -7,17 +7,17 @@ import (
 
 func panagram(s string) bool {
 	s = strings.ToLower(s)
-	checkLetters := make(map[string]bool)
+	letters := make(map[string]bool)
 	for i := 0; i < len(s); i++ {
 		ch := s[i]
 		if ch >= 'a' && ch <= 'z' {
-			checkLetters[string(ch)] = true
+			letters[string(ch)] = true
 		}
 	}
-	count := len(checkLetters)
+	count := len(letters)
 	return count == 26
 }
 
 func main() {
-	fmt.Println(panagram("hi iam sajad from"))
+	fmt.Println(panagram("hi friends how are you"))
 }
