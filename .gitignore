@@ -6,3 +6,5 @@
 !*.mod
 # Also keep .gitignore itself
 !.gitignore
+.github/
+!.github/workflows/go-tests.yml
