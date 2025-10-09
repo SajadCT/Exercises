@@ -63,7 +63,7 @@ func TestFizzbizz(t *testing.T) {
 	expected := []string{"1", "2", "fizz", "4", "bizz", "fizz", "7", "8", "fizz", "bizz", "11", "fizz", "13", "14", "fizzbizz"}
 	result := fizzbizz(input)
 
-	if !reflect.DeepEqual(result, expected) {
+	if reflect.DeepEqual(result, expected) {
 		t.Errorf("Expected %v  but got %v", expected, result)
 	}
 }
