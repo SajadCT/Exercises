@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -18,6 +17,6 @@ func panagram(s string) bool {
 	return count == 26
 }
 
-func main() {
-	fmt.Println(panagram("hi friends how are you"))
-}
+// func main() {
+// 	fmt.Println(panagram("hi friends how are you"))
+// }

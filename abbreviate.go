@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 	"unicode"
 )
@@ -18,6 +17,6 @@ func abbreviate(s string) string {
 	return strings.Join(abb, "")
 }
 
-func main() {
-	fmt.Println(abbreviate("National Institution of Tecnologies"))
-}
+// func main() {
+// 	fmt.Println(abbreviate("National Institution of Tecnologies"))
+// }

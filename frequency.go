@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func frequency(s string) map[string]int {
 	letterFreq := make(map[string]int)
 	for i := 0; i < len(s); i++ {
@@ -13,6 +9,6 @@ func frequency(s string) map[string]int {
 	return letterFreq
 }
 
-func main() {
-	fmt.Println(frequency("Are u happy ?"))
-}
+// func main() {
+// 	fmt.Println(frequency("Are u happy ?"))
+// }
